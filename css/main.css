@@ -1,0 +1,18 @@
+body{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+}
+section{
+    background-color: chocolate;
+}
+ul{
+    background-color: coral;
+    padding: 5px;
+    text-align: center;
+}
+li{ 
+    display: inline;
+}
