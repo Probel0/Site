@@ -1,32 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/theme.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
+
 <body>
-    <header>
-    <div align="center">                           <!-- Шапка -->
-    <p>Стеклорезка</p>
-    </div>
-    
-    <div>                           <!-- Меню -->
-    <ul>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">6</a></li>
-    </ul>
-    </div>
+    <header class="navbar navbar-expand-lg align-items-center w-100 position-absolute z-index-10 navbar-light">
+        <div class="position-relative container-fluid"><a href="#content" class="skip-to-main sr-only-focusable" role="button">Skip to main content</a><a class="navbar-brand mr-auto" href="./index.html" aria-label="Click to go back to Homepage"><svg width="160" height="50" class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 701 217"><path d="M122.73 185.24l12.57-15.05c8.77 7.2 18.58 11.4 29.58 11.4 8.37 0 12.7-3.4 12.7-8.25 0-5.36-4.2-6.54-17.28-9.68-19.23-4.32-33.5-9.56-33.5-27.62 0-17.27 13.87-28.8 34.42-28.8 15 0 26.83 4.32 36.38 12.3l-11.38 16c-8.2-6.3-17.28-9.54-25.65-9.54-7.2 0-11.26 3.4-11.26 7.85 0 5.5 4.32 7.33 17.67 10.2 20.15 4.32 33.1 10.07 33.1 27 0 18.06-13.74 29.3-36 29.3-15.96-.08-30.48-5.3-41.35-15.13zm190.7-6.02l8 6.94-10.87 12.56-8.77-7.6a49.08 49.08 0 0 1-28.53 9.16c-26.18 0-48.25-21.3-48.25-46.6s22.12-46.46 48.3-46.46 48.43 21.2 48.43 46.46a44 44 0 0 1-8.3 25.52zm-28.14-2.48l-9.28-8.12 10.86-12.56 9.56 8.24a26 26 0 0 0 2.22-10.6c0-14.13-11.64-26.17-25.4-26.17s-25.4 12-25.4 26.17 11.66 26.3 25.4 26.3a23.74 23.74 0 0 0 12.04-3.26zm51.57-17.4V108.8h22.38v49.47c0 12.7 8.12 21.73 19.37 21.73s19.5-9 19.5-21.73V108.8h22.25v50.52c0 24.08-17.14 41-41.75 41s-41.75-16.92-41.75-41zm158.23 26.3h-35.6l-5.24 13.1H429.1l35.6-89.9h25.13l35.6 89.9H500.3zm-6.93-17.53l-10.87-27.62-10.86 27.62zm102.35 30.62l-19.77-28.14h-11v28.14h-22.37v-89.9h41.75c19.76 0 34.16 12.7 34.16 30.9 0 13.1-7.46 23.42-19.1 28.14l21.73 30.88zm-30.76-48.55H577c7.72 0 13.2-4.2 13.2-10.47s-5.5-10.47-13.2-10.47h-17.26zm92.66-21.34v14h44v20h-44v15.87h48.43v20H630v-89.9h70.8v20z" fill="#232323"></path><path d="M3.33 3.3h210.03v210.03H3.33z" fill="none" stroke="#232323" stroke-miterlimit="10" stroke-width="6"></path></svg> </a>
+            <button class="navbar-toggler ml-auto collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">Overview</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDemos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Demos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarPages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDocs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Docs</a></li>
+                </ul>
+                <a class="btn btn-sm btn-secondary text-uppercase mt-3 mt-lg-0 ml-lg-4 d-block d-lg-inline-block" href="https://themes.getbootstrap.com/product/square" target="_blank" rel="noopener">Buy now</a></div>
+        </div>
     </header>
-    
-    <section>
-    
-    </section>
+    <main>
+        <section class="bg-layer-light-top-80-left-60 min-vh-100">
+            <div class="container">
+                <div class="row no-gutters align-items-center">
+                    <div class="col-lg-7 pt-12 pt-lg-0 pr-5 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                        <h1 class="display-3">Стеклорезка<br><span class="font-weight-lighter">simplicity</span></h1>
+                        <p class="mb-6">Square, a fully flexible Bootstrap theme that utilises timeless Swiss influenced graphic design and typography to create beautiful responsive websites</p><a href="#pages" data-scroll="" class="btn btn-secondary text-uppercase d-inline-flex align-items-center">Explore pages<svg width="16" height="16" class="ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>arrow-right-1</title>
+                        <path d="M19.5,12a2.3,2.3,0,0,1-.78,1.729L7.568,23.54a1.847,1.847,0,0,1-2.439-2.773l9.752-8.579a.25.25,0,0,0,0-.376L5.129,3.233A1.847,1.847,0,0,1,7.568.46l11.148,9.808A2.31,2.31,0,0,1,19.5,12Z"></path>
+                    </svg>
+                </a>
+                    </div>
+                    <div class="col-lg-5 pt-12 aos-init aos-animate" data-aos="fade-left">
+                        <div class="img-shifted img-shifted-with-edge shift-right vh-75">
+                            <div class="bg-image bg-cover" style="background-image: none; z-index: 0;" data-jarallax="" data-speed=".8" data-jarallax-original-styles="background-image: url(assets/images/photos/photo-94.jpg);">
+                                <div id="jarallax-container-0" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;">
+                                    <div style="background-position: 50% 50%; background-size: cover; background-repeat: no-repeat; background-image: url(img/glass-banner.jpg); position: absolute; top: 0px; left: 0px; width: 484.828px; height: 681.6px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 85.2px; transform: translate3d(0px, -105.2px, 0px);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-6 py-lg-7">
+            <div>
+                <div>
+                    <div align="center">
+                        <h2 class="" style="color:#282828;">ЧТО МЫ ДЕЛАЕМ?</h2>
+                    </div>
+                    <div class="row_area" style="display: flex; justify-content: center;">
+                        <div class="whatwedo">
+                            <div class="whatwedo-thumb">
+                                <a href="http://tonirovka-vrn.ru/izgotovlenie-fatseta-na-stekle-i-zerkale-html/" target="_self">
+                                    <img src="http://tonirovka-vrn.ru/wp-content/uploads/2019/02/C1.jpg">
+                                </a>
+                            </div>
+                            <a href="http://tonirovka-vrn.ru/izgotovlenie-fatseta-na-stekle-i-zerkale-html/" target="_self">
+                                <h6 class="whatwedo-title">ИЗГОТОВЛЕНИЕ ФАЦЕТА</h6>
+                            </a>
+                        </div>
+                        <div class="whatwedo">
+                            <div class="whatwedo-thumb">
+                                <a href="http://tonirovka-vrn.ru/obrabotka-kromki-stekla-zerkala/" target="_self">
+                                    <img src="http://tonirovka-vrn.ru/wp-content/uploads/2019/02/s2.jpg">
+                                </a>
+                            </div>
+                            <a href="http://tonirovka-vrn.ru/obrabotka-kromki-stekla-zerkala/" target="_self">
+                                <h6 class="whatwedo-title">ОБРАБОТКА КРОМКИ</h6>
+                            </a>
+                        </div>
+                        <div class="whatwedo">
+                            <div class="whatwedo-thumb">
+                                <a href="http://tonirovka-vrn.ru/peskostruynaya-obrabotka-zerkal-html/" target="_self">
+                                    <img src="http://tonirovka-vrn.ru/wp-content/uploads/2019/02/s3.jpg">
+                                </a>
+                            </div>
+                            <a href="http://tonirovka-vrn.ru/peskostruynaya-obrabotka-zerkal-html/" target="_self">
+                                <h6 class="whatwedo-title">ПЕСКОСТРУЙНАЯ ОБРАБОТКА</h6>
+                            </a>
+                        </div>
+                        <div class="whatwedo">
+                            <div class="whatwedo-thumb">
+                                <a href="http://tonirovka-vrn.ru/http-tonirovka-vrn-ru-rezka-stekla-html/" target="">
+                                    <img src="http://tonirovka-vrn.ru/wp-content/uploads/2019/03/Bez-imeni-1.jpg">
+                                </a>
+                            </div>
+                            <a href="http://tonirovka-vrn.ru/http-tonirovka-vrn-ru-rezka-stekla-html/" target="">
+                                <h6 class="whatwedo-title">РЕЗКА СТЕКЛА И ЗЕРКАЛА</h6>
+                            </a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-6 py-lg-7" id="pages">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-10 col-lg-8">
+                        <h2>ЦЕНЫ</h2>
+                    </div>
+                </div>
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Имя</th>
+                            <th scope="col">Фамилия</th>
+                            <th scope="col">Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--
+                    <table>
+                    <td>
+                        <img src="img/3mm1.png" alt="" style="width: 125px;" class="">
+                    </td>
+                    <td>
+                        <p>1300</p>
+                    </td>
+                </table>
+                 <div class="row pt-3 text-center" style="display: flex;flex-direction: column;align-items: center;">
+                    <div class="col-md-6 mb-6 mb-lg-7 aos-init aos-animate" data-aos="fade-up">
+                        <h3>Event</h3>
+                        <img src="img/3mm1.png" alt="" style="width: 125px;" class="">
+                        img-fluid shadow lift
+                    </div>
+                </div>
+            -->
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>

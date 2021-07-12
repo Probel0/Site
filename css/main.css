@@ -1,18 +1,74 @@
-body{
-    width: 75%;
+body {
     margin-left: auto;
     margin-right: auto;
 }
-header{
+
+section {
+    margin: 50px;
 }
-section{
-    background-color: chocolate;
-}
-ul{
-    background-color: coral;
+
+header {}
+
+ul {
     padding: 5px;
     text-align: center;
 }
-li{ 
+
+li {
     display: inline;
+}
+
+.whatwedo {
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    padding: 0;
+    margin: 10px;
+    background: rgba(255, 255, 255, 1);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.whatwedo-thumb {
+    height: 254px;
+    overflow: hidden;
+}
+
+.whatwedo-thumb img {
+    height: auto;
+    min-height: 254px;
+}
+
+.whatwedo-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.7);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.whatwedo:hover .whatwedo-thumb img {
+    opacity: 0.3
+}
+
+.whatwedo h6 {
+    margin: 0;
+}
+
+.whatwedo:hover .whatwedo-title {
+    background: none!important;
+    bottom: inherit !important;
+    top: 84%;
+    transform: translateY(-225%);
 }
