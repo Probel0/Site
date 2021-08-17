@@ -362,6 +362,9 @@ hr {
         flex: 0 0 83.33333333%;
         max-width: 83.33333333%
     }
+    .icon {
+        width: 100%;
+    }
 }
 
 @media (min-width:992px) {
@@ -1424,6 +1427,17 @@ body main {
         overflow-x: hidden;
         overflow-y: scroll;
         border-top: 3px solid #da3458
+    }
+    .row_area {
+        flex-wrap: wrap;
+    }
+    .position-r {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .icon {
+        width: auto;
     }
 }
 
