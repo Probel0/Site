@@ -29,7 +29,7 @@ html {
 ::-webkit-scrollbar-thumb:horizontal {
     border-radius: 9pt;
     display: block;
-    background-color: hsla(0, 0%, 100%, .5);
+    background-color: #dce0e4;
     border: 5px solid hsla(0, 0%, 100%, 0);
     background-clip: content-box;
     -webkit-transition: background-color .5s ease;
