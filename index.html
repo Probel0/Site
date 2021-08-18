@@ -16,10 +16,46 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/table.css">
     <script src="js/table.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/perehod.css">
+    <link rel="stylesheet" href="css/strelka.css">
+
+    <script>
+        setTimeout(function() {
+            $('body').addClass('body_visible');
+        }, 200);
+    </script>
+
+    <noscript>
+        <style>.body_hide{opacity: 1 !important;}</style>
+    </noscript>
+
+    <script>
+        $(function() {
+                // при нажатии на кнопку scrollup
+                $('.scrollup').click(function() {
+                    // переместиться в верхнюю часть страницы
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, 300);
+                })
+            })
+            // при прокрутке окна (window)
+        $(window).scroll(function() {
+            // если пользователь прокрутил страницу более чем на 200px
+            if ($(this).scrollTop() > 200) {
+                // то сделать кнопку scrollup видимой
+                $('.scrollup').fadeIn();
+            }
+            // иначе скрыть кнопку scrollup
+            else {
+                $('.scrollup').fadeOut();
+            }
+        });
+    </script>
 </head>
 
-<body>
-
+<body class="body_hide">
     <header class="navbar navbar-expand-lg align-items-center w-100 position-absolute z-index-10 navbar-light">
         <div class="position-r  elative container-fluid" style="flex-wrap:nowrap;">
             <svg class="icon" width="170" height="50" xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +105,7 @@
         <section class="bg-layer-light-top-80-left-60 min-vh-100">
             <div class="container">
                 <div class="row no-gutters align-items-center">
-                    <div class="col-lg-7 pt-12 pt-lg-0 pr-5 aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                    <div class="col-lg-7 pt-12 pt-lg-0 pr-5" data-aos="fade-right" data-aos-once="true" data-aos-delay="100" data-aos-duration="750">
                         <h1 class="display-3">Стеклорезка<br><span class="font-weight-lighter">быстро и дёшево</span></h1>
                         <p class="mb-6">123123</p>
                         <a href="#" data-modal="#contact" class="btn btn-secondary text-uppercase d-inline-flex align-items-center">Заказать
@@ -79,7 +115,7 @@
                     </svg>
                 </a>
                     </div>
-                    <div class="col-lg-5 pt-12 aos-init aos-animate" data-aos="fade-left">
+                    <div class="col-lg-5 pt-12" data-aos="fade-left" data-aos-once="true" data-aos-delay="100" data-aos-duration="750">
                         <div class="img-shifted img-shifted-with-edge shift-right vh-75">
                             <div class="bg-image bg-cover" style="background-image: none; z-index: 0;">
                                 <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden;">
@@ -94,11 +130,11 @@
         <section class="py-6 py-lg-7 ">
             <div>
                 <div>
-                    <div align="center">
+                    <div align="center" data-aos="fade-up" data-aos-once="true">
                         <h2 style="color:#282828;">ЧТО МЫ ДЕЛАЕМ?</h2>
                     </div>
                     <div class="row_area " style="display: flex; justify-content: center; ">
-                        <div class="whatwedo ">
+                        <div class="whatwedo " data-aos="fade-down" data-aos-once="true" data-aos-delay="100" data-aos-duration="500">
                             <div class="whatwedo-thumb ">
                                 <a href="#" data-modal="#facet">
                                     <img src="http://tonirovka-vrn.ru/wp-content/uploads/2019/02/C1.jpg ">
@@ -106,7 +142,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="whatwedo ">
+                        <div class="whatwedo " data-aos="fade-down" data-aos-once="true" data-aos-delay="200" data-aos-duration="500">
                             <div class="whatwedo-thumb ">
                                 <a href="#" data-modal="#obrabotka">
                                     <img src="http://tonirovka-vrn.ru/wp-content/uploads/2019/02/s2.jpg ">
@@ -114,7 +150,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="whatwedo ">
+                        <div class="whatwedo " data-aos="fade-down" data-aos-once="true" data-aos-delay="300" data-aos-duration="500">
                             <div class="whatwedo-thumb ">
                                 <a href="#" data-modal="#sverlenie">
                                     <img src="img/1.jpg">
@@ -122,7 +158,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="whatwedo ">
+                        <div class="whatwedo " data-aos="fade-down" data-aos-once="true" data-aos-delay="400" data-aos-duration="500">
                             <div class="whatwedo-thumb ">
                                 <a href="#" data-modal="#rezka">
                                     <img src="http://tonirovka-vrn.ru/wp-content/uploads/2019/03/Bez-imeni-1.jpg ">
@@ -141,20 +177,20 @@
                     <div class="col ">
                         <div class="swiper container ">
                             <div class="container ">
-                                <div class="row justify-content-center text-center ">
+                                <div class="row justify-content-center text-center" data-aos="fade-down" data-aos-once="true">
                                     <div class="col-md-10 col-lg-8 ">
                                         <h2>ЦЕНЫ</h2>
                                     </div>
                                 </div>
                                 <hr>
-                                <div class="div-table" style="text-align: -webkit-center; ">
-                                    <div class="row justify-content-center text-center ">
+                                <div class="div-table" style="text-align: -webkit-center;">
+                                    <div class="row justify-content-center text-center" data-aos="fade-down" data-aos-once="true">
                                         <div class="col-md-10 col-lg-8 ">
                                             <h3>Фацет прямолинейный</h3>
                                         </div>
                                     </div>
-                                    <table class="table table-striped ">
-                                        <thead class="thead-dark " style="background-color: #da3458; ">
+                                    <table class="table table-striped" data-aos="zoom-in" data-aos-once="true" data-aos-delay="200">
+                                        <thead class="thead-dark ">
                                             <tr>
                                                 <th scope="col ">Ширина фацента</th>
                                                 <th scope="col ">Индивидуальный заказ **?</th>
@@ -182,12 +218,12 @@
                                 </div>
 
                                 <div class="div-table" style="text-align: -webkit-center;">
-                                    <div class="row justify-content-center text-center ">
+                                    <div class="row justify-content-center text-center" data-aos="fade-down" data-aos-once="true">
                                         <div class="col-md-10 col-lg-8 ">
                                             <h3>Резка</h3>
                                         </div>
                                     </div>
-                                    <table class="table table-striped ">
+                                    <table class="table table-striped" data-aos="zoom-in" data-aos-once="true" data-aos-delay="200">
                                         <thead class="thead-dark ">
                                             <tr>
                                                 <th scope="col ">*****</th>
@@ -243,13 +279,13 @@
                                     </table>
                                 </div>
 
-                                <div class="div-table" style="text-align: -webkit-center; ">
-                                    <div class="row justify-content-center text-center ">
+                                <div class="div-table" style="text-align: -webkit-center;">
+                                    <div class="row justify-content-center text-center " data-aos="fade-down" data-aos-once="true">
                                         <div class="col-md-10 col-lg-8 ">
                                             <h3>Сверление отверстий</h3>
                                         </div>
                                     </div>
-                                    <table class="table table-striped table-dark-vertical ">
+                                    <table class="table table-striped table-dark-vertical" data-aos="zoom-in" data-aos-once="true" data-aos-delay="200">
                                         <tr>
                                             <th>диаметр отверстия</th>
                                             <td>4</td>
@@ -288,13 +324,13 @@
                                 </div>
 
                                 <div class="div-table" style="text-align: -webkit-center;">
-                                    <div class="row justify-content-center text-center ">
+                                    <div class="row justify-content-center text-center " data-aos="fade-down" data-aos-once="true">
                                         <div class="col-md-10 col-lg-8 ">
                                             <h3>Обработка стекла</h3>
                                         </div>
                                     </div>
-                                    <table class="table table-striped ">
-                                        <thead class="thead-dark table-text-center " style="background-color: #da3458; ">
+                                    <table class="table table-striped " data-aos="zoom-in" data-aos-once="true" data-aos-delay="200">
+                                        <thead class="thead-dark table-text-center ">
                                             <tr>
                                                 <th rowspan="3 ">толщина стекла в мм</th>
                                                 <th rowspan="3 ">снятие фаски цена ******* ***</th>
@@ -500,7 +536,7 @@
                 <div class="contact__left" style="display: flex; flex-direction: column; align-items: center;">
                     <table class="table table-striped" style="">
                         <h3 class="modal__title mb-0" style="text-align: center;">Фацет прямолинейный</h3>
-                        <thead class="thead-dark " style="background-color: #da3458; ">
+                        <thead class="thead-dark ">
                             <tr>
                                 <th scope="col ">Ширина фацента</th>
                                 <th scope="col ">Индивидуальный заказ **?</th>
@@ -545,7 +581,7 @@
                 <div class="contact__left" style="display: flex; flex-direction: column; align-items: center;">
                     <table class="table table-striped ">
                         <h3 class="modal__title mb-0" style="text-align: center;">Обработка стекла</h3>
-                        <thead class="thead-dark table-text-center " style="background-color: #da3458; ">
+                        <thead class="thead-dark table-text-center ">
                             <tr>
                                 <th rowspan="3 ">толщина стекла в мм</th>
                                 <th rowspan="3 ">снятие фаски цена ******* ***</th>
@@ -756,6 +792,13 @@
         <!-- /.modal__dialog -->
     </div>
 
+    <div class="scrollup">
+        <!-- Иконка fa-chevron-up (Font Awesome) -->
+        <svg width="30" height="30" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path>
+        </svg>
+    </div>
+
     <script src="js/rellax.js "></script>
     <script>
         var rellax = new Rellax('.rellax', {
@@ -763,6 +806,11 @@
         });
     </script>
     <script src="js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
