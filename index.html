@@ -21,16 +21,18 @@
     <link rel="stylesheet" href="css/strelka.css">
 
     <script>
+        //!Скрипт плавного перехода между страницами
         setTimeout(function() {
             $('body').addClass('body_visible');
         }, 200);
     </script>
 
-    <noscript>
+    <noscript> <!--Когда у браузера отключены скрипты плавного перехода между страницами-->
         <style>.body_hide{opacity: 1 !important;}</style>
     </noscript>
 
     <script>
+        //! Всплывающая кнопка для прокрутки страницы на вверх
         $(function() {
                 // при нажатии на кнопку scrollup
                 $('.scrollup').click(function() {

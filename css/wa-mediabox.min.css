@@ -99,8 +99,9 @@
     bottom: 0;
     padding: 0 52px 0 14px;
     line-height: 24px;
-    font-size: 13px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Inter';
     background: #333;
     background: rgba(0, 0, 0, .8);
     color: #fff;
